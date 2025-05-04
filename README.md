@@ -1,28 +1,28 @@
 # Q-Learning Agent Simulation
 
-Bu proje, **Q-Learning** algoritmasını kullanarak bir ajanı bir ızgarada hareket ettiren bir simülasyon sağlar. Ajan, belirli bir hedefe ulaşmak için ödül ve ceza sistemine göre öğrenir. Proje, ajanın **Q-Tablo** kullanarak hangi eylemleri yapması gerektiğini öğrenmesini sağlar ve her adımda bu eylemleri gerçekleştirir.
+This project provides a simulation where an agent moves on a grid using the **Q-Learning** algorithm. The agent learns to reach a specific goal using a reward and penalty system. The project allows the agent to learn what actions to take using the **Q-Table** and performs these actions at each step.
 
-### Özellikler
-- Q-Learning algoritması kullanılarak ajan öğrenir.
-- Ajan, bir ızgarada hareket eder ve hedefe ulaşmak için adımlar atar.
-- Ajanın hareketleri `up`, `down`, `left`, `right`, `up-right`, `up-left`, `down-right`, `down-left` gibi yönlerde çapraz hareketleri de içerir.
-- Engel ve hedef simülasyonu.
-- Eğitim sürecinde ödüller ve ceza değerleriyle ajan yönlendirilir.
+### Features
+- The agent learns using the **Q-Learning** algorithm.
+- The agent moves on a grid and takes steps to reach a goal.
+- The agent's movements include `up`, `down`, `left`, `right`, `up-right`, `up-left`, `down-right`, and `down-left` diagonal directions.
+- Simulates obstacles and a goal.
+- During the training process, the agent is guided by rewards and penalty values.
 
-### Proje Yapısı
+### Project Structure
 
-- **`game.py`**: Q-Learning algoritmasını içeren ana simülasyon dosyası.
-- **`requirements.txt`**: Proje için gerekli Python kütüphanelerini içerir.
-- **`README.md`**: Proje hakkında bilgi ve kullanım talimatları.
+- **`game.py`**: The main simulation file containing the Q-Learning algorithm.
+- **`requirements.txt`**: Contains the Python libraries required for the project.
+- **`README.md`**: Information about the project and usage instructions.
 
-### Gerekli Kütüphaneler
+### Required Libraries
 
-Bu projede kullanılan bazı temel Python kütüphanelerini yüklemeniz gerekir. Kütüphaneleri yüklemek için şu komutu kullanabilirsiniz:
+You need to install some basic Python libraries used in this project. You can install the libraries using the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
-
+### Çalıştırmak için
 ```bash
 python game.py
 ```
